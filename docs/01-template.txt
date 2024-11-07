@@ -1,0 +1,20 @@
+https://angular.dev/guide/templates
+
+1. Interpolacion
+
+  Estado
+  class Component{
+    name="Pedro"
+  }
+
+  Template
+  <div>{{name}}</div>
+  Resultado
+  <div>Pedro</div>
+
+2. Control Flow
+  https://angular.dev/guide/templates/control-flow
+
+  if
+
+  forEach
