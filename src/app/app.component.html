@@ -2,6 +2,14 @@
   <div>{{name}}</div>
 }
 @else {
-  <button>Login</button>
+  <button (click)="handlerClick($event)">Login</button>
 }
+<ul>
+@for(item of data;track item){
+  <li>{{item}}</li>
+}
+@empty {
+  <div>No existen elementos</div>
+}
+</ul>
 

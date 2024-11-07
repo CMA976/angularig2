@@ -11,4 +11,8 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   name = 'Pedro'
   isAutenticated = false
+  data = []
+  handlerClick(ev:Event){
+    this.isAutenticated = !this.isAutenticated
+  }
 }

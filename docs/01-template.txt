@@ -16,5 +16,13 @@ https://angular.dev/guide/templates
   https://angular.dev/guide/templates/control-flow
 
   if
-
+    https://angular.dev/guide/templates/control-flow#conditionally-display-content-with-if-else-if-and-else
   forEach
+    https://angular.dev/guide/templates/control-flow#repeat-content-with-the-for-block
+
+    @for (item of items; track item.id) {
+        {{ item.name }}
+    }
+
+3. Eventos
+  (click)="handlerClick($event)"
