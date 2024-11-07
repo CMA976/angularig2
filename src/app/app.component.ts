@@ -12,7 +12,7 @@ export class AppComponent {
   name = 'Pedro'
   isAutenticated = false
   data = []
-  handlerClick(ev:Event){
-    this.isAutenticated = !this.isAutenticated
+  login(ev:Event){
+    this.isAutenticated = true
   }
 }

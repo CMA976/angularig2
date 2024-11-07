@@ -26,3 +26,5 @@ https://angular.dev/guide/templates
 
 3. Eventos
   (click)="handlerClick($event)"
+4. Comunicacion entre componentes
+   Los datos deben de fluir de padres a hijos
