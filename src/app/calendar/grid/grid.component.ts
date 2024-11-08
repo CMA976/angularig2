@@ -16,4 +16,7 @@ function* getDays(){
 })
 export class GridComponent {
   days = [...getDays()]
+  changeDay(day:number){
+    console.log(day)
+  }
 }
