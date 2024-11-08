@@ -1,0 +1,10 @@
+.day{
+  display: flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+.day:hover{
+  outline: 1px solid blue;
+}
