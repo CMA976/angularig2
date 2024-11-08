@@ -9,11 +9,4 @@ import { Component, EventEmitter, HostListener, Input, Output } from '@angular/c
 })
 export class DayComponent {
   @Input() day=0
-  @Output() changeDay = new EventEmitter<number>()
-
-  @HostListener('click', ["$event"])
-  handlerClick(ev:Event){
-    ev.stopPropagation();
-    this.changeDay.emit(this.day)
-  }
 }
