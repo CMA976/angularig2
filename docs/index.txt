@@ -7,3 +7,4 @@
   Reactive Forms
 3. Directives, Pipe
 4. Ciclo de vida de un components
+5. Debug app
