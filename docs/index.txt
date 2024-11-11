@@ -1,10 +1,9 @@
-1. Comunicar diferentes partes de una applicacioon
-	1.1 CustomEvents
-		signal
-		effect
-		document->EventTarget
-		CustomEvents
-	1.2 Servicios(facil)->IOC
-2. Queremos pasar html de padres a hijos
-	1.1 content->v0 webcomponents
-	1.2 slot->v1	webcomponents
+1. Routing
+  router, menu, layout, css->router-outlet
+  rutas dinamicas
+  capturar pathVariable
+  capturar queryString
+2. Forms
+  Reactive Forms
+3. Directives, Pipe
+4. Ciclo de vida de un components

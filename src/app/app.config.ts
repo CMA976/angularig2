@@ -14,7 +14,7 @@ export const appConfig: ApplicationConfig = {
         withFetch()
       ),
       {
-        provide:URLSERVER, useValue:'https://my-json-server.typicode.com/typicode/demo/posts'
+        provide:URLSERVER, useValue:'https://my-json-server.typicode.com/typicode/demo'
       }
   ]
 };

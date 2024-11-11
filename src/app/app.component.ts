@@ -5,9 +5,10 @@ import { CalendarComponent } from './calendar/calendar/calendar.component';
 import { ListpizzasComponent } from './pizzas/listpizzas/listpizzas.component';
 import { CarritoComponent } from './pizzas/carrito/carrito.component';
 import { ParentComponent } from './parent/parent/parent.component';
-import { ShowdialogComponent } from './dialog/showdialog/showdialog.component';
 import { DialogComponent } from './dialog/dialog/dialog.component';
 import { PostsComponent } from './posts/posts.component';
+
+
 
 @Component({
   selector: 'app-root',
