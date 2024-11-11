@@ -7,11 +7,18 @@ import { CarritoComponent } from './pizzas/carrito/carrito.component';
 import { ParentComponent } from './parent/parent/parent.component';
 import { ShowdialogComponent } from './dialog/showdialog/showdialog.component';
 import { DialogComponent } from './dialog/dialog/dialog.component';
+import { PostsComponent } from './posts/posts.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CalendarComponent, ListpizzasComponent, CarritoComponent, ParentComponent /*,ShowdialogComponent*/, DialogComponent],
+  imports: [CalendarComponent,
+    ListpizzasComponent,
+    CarritoComponent,
+    ParentComponent /*,ShowdialogComponent*/,
+    DialogComponent,
+    PostsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

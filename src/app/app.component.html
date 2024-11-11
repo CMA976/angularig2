@@ -28,3 +28,12 @@
 }
 </ul>
 
+<!--
+https://angular.dev/guide/defer#defer
+-->
+@defer (on viewport) {
+  <app-posts />
+} @placeholder {
+  <div>Loading</div>
+}
+
