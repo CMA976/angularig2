@@ -11,7 +11,7 @@ import { DialogComponent } from './dialog/dialog/dialog.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CalendarComponent, ListpizzasComponent, CarritoComponent, ParentComponent ,ShowdialogComponent, DialogComponent],
+  imports: [CalendarComponent, ListpizzasComponent, CarritoComponent, ParentComponent /*,ShowdialogComponent*/, DialogComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
