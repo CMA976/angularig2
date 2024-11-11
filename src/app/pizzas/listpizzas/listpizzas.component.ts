@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Pizza } from '../pizza';
 import { PizzaitemComponent } from '../pizzaitem/pizzaitem.component';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-listpizzas',
@@ -15,7 +16,9 @@ export class ListpizzasComponent {
     {id:2,name:"mediterraneo",price:3},
     {id:3,name:"atún",price:1.5}
   ]
+  constructor(private service:PizzaService){
 
+  }
   @HostListener('click', ["$event"])
   handlerClick(ev:Event){
     const node = (ev.composedPath() as [HTMLElement]).find(n=>n.dataset && 'id' in n.dataset)
@@ -23,17 +26,18 @@ export class ListpizzasComponent {
       const {id} = node.dataset;
       const pizza = this.pizzas.find(p=>p.id===Number(id))
       if(pizza){
-        const events = this.createEvent(pizza)
-        document.dispatchEvent(events)
+        //const events = this.createEvent(pizza)
+        //document.dispatchEvent(events)
+        this.service.emit(structuredClone(pizza))
       }
     }
   }
-  private createEvent(pizza:Pizza):CustomEvent{
+  /*private createEvent(pizza:Pizza):CustomEvent{
     //https://developer.mozilla.org/es/docs/Web/API/CustomEvent
     return new CustomEvent('add-carrito',{
       bubbles:true,
       composed:true,
       detail:structuredClone(pizza)
     })
-  }
+  }*/
 }

@@ -1,0 +1,47 @@
+class A{
+  b=new B()
+}
+
+class B{
+  c=new C()
+}
+
+class C{
+
+}
+
+A->B->C
+
+//Bad
+function PrintDate(){
+  console.log(new Date)
+}
+
+//Good
+function PrintDate(date,writer){
+  writer(date)
+}
+
+const spy = (newDate)=>console.log(date===newDate)
+const date = new Date
+PrintDate(date,spy)
+
+class A{
+  constructor(private b:B){}
+}
+class B{
+  constructor(private c:C){}
+}
+
+new A(new B(new C)))
+
+c->se va a crear y se cachea->singleton
+b->se va acrear y se cachea->singleton
+a->b->c
+
+Se pueden crear instancias basadas en components, que serían
+singleton para el componente creador y sus descencients
+
+1. Clase
+2. Factoria->una funcion que devuelve la instancia de un servicio
+3. Value->url global de mi api
