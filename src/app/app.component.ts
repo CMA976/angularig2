@@ -4,11 +4,12 @@ import { GridComponent } from './calendar/grid/grid.component';
 import { CalendarComponent } from './calendar/calendar/calendar.component';
 import { ListpizzasComponent } from './pizzas/listpizzas/listpizzas.component';
 import { CarritoComponent } from './pizzas/carrito/carrito.component';
+import { ParentComponent } from './parent/parent/parent.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CalendarComponent, ListpizzasComponent, CarritoComponent],
+  imports: [CalendarComponent, ListpizzasComponent, CarritoComponent, ParentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
