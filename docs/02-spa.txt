@@ -1,0 +1,4 @@
+1. Metainformacion donde asocias un path con un componente
+  /page1->Page1Component
+2. Menu->RouterLink-><a href=""></a>
+3. <router-outlet></router-outlet>

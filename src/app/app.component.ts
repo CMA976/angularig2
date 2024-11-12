@@ -7,6 +7,7 @@ import { CarritoComponent } from './pizzas/carrito/carrito.component';
 import { ParentComponent } from './parent/parent/parent.component';
 import { DialogComponent } from './dialog/dialog/dialog.component';
 import { PostsComponent } from './posts/posts.component';
+import { LayoutComponent } from './pages/layout/layout.component';
 
 
 
@@ -18,7 +19,8 @@ import { PostsComponent } from './posts/posts.component';
     CarritoComponent,
     ParentComponent /*,ShowdialogComponent*/,
     DialogComponent,
-    PostsComponent
+    PostsComponent,
+    LayoutComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
