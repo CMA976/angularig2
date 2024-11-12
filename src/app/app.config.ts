@@ -3,6 +3,7 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { provideClientHydration } from '@angular/platform-browser';
 
 export const URLSERVER = new InjectionToken<string>("url")
 
@@ -15,6 +16,6 @@ export const appConfig: ApplicationConfig = {
       ),
       {
         provide:URLSERVER, useValue:'https://my-json-server.typicode.com/typicode/demo'
-      }
+      }, provideClientHydration()
   ]
 };
