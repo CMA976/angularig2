@@ -6,7 +6,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   imports: [],
   templateUrl: './child.component.html',
   styleUrl: './child.component.css',
-  encapsulation:ViewEncapsulation.ShadowDom
+  //encapsulation:ViewEncapsulation.ShadowDom
 })
 export class ChildComponent {
 

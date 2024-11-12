@@ -10,9 +10,6 @@ import { Pizza } from './pizza';
 export class PizzaService {
 
   private subject = new Subject<Pizza>()
-  constructor() {
-    console.log("contructor pizzaService")
-  }
   emit(pizza:Pizza){
     this.subject.next(pizza)
   }
