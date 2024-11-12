@@ -1,0 +1,39 @@
+1. SPA(single page application)
+
+  index.html->browser->js->template->resultado
+
+  contras
+    1. experiencia de usuario no es buena si la red tiene retrasos
+    2. SEO
+    3. Memoria->js->no se descarga
+  ventajas
+    renderizado se balancea al cliente
+2. MPA->SSR,SSG
+  Modelo->Vista->Controlador
+  Server Side Rendering->node.js
+  Server Sice Generation->node.js
+
+  ventajas
+    1. mejors experiencia de usuario
+    2. SEO
+    3. NIP(iteracion de usuario)->Qwik
+  contras
+    1. mayor procesamiento backend(node.js)->caches
+    2. Hidratacion(pesado)
+      <script type="ng-hidration">
+        json->con el estado de la app
+      </script>
+      https://qwik.dev/docs/concepts/resumable/
+
+3. PWA(Progresive Web App)
+    ServiceWorker(Proxi)
+        install->instalar el minimo de tu app en el cliente
+        activate->se activa el sw
+        fetch->captura todos las llamadas de red
+            1. Server->Cache
+            2. Siempre Server
+            3. Siempre Cache
+        Notificaciones
+        Sync
+
+      https://developer.chrome.com/blog/beyond-spa?hl=es-419
