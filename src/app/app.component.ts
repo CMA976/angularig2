@@ -8,6 +8,7 @@ import { ParentComponent } from './parent/parent/parent.component';
 import { DialogComponent } from './dialog/dialog/dialog.component';
 import { PostsComponent } from './posts/posts.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { FormComponent } from './forms/form/form.component';
 
 
 
@@ -20,7 +21,8 @@ import { LayoutComponent } from './pages/layout/layout.component';
     ParentComponent /*,ShowdialogComponent*/,
     DialogComponent,
     PostsComponent,
-    LayoutComponent
+    LayoutComponent,
+    FormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
