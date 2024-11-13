@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, RequiredValidator, Validators } from '@angular/forms';
 import e from 'express';
+import { ControlComponent } from '../control/control.component';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, ControlComponent],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })

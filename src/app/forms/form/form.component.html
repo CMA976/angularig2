@@ -1,19 +1,8 @@
 <form [formGroup]="profileForm" (ngSubmit)="handlerSubmit()">
-  <div class="control">
-    <label for="firstName">Introduzca el nombre</label>
-    <input id="firstName" type="text" formControlName="firstName">
-    @if(name?.errors?.["required"] && profileForm.dirty){
-      <div>
-        El nombre es requerido
-      </div>
-    }
-  </div>
-  <div class="control">
-    <label for="lastName">Introduzca el apellido</label>
-    <input type="text" id="lastName" formControlName="lastName">
 
+  <app-control name="firstName" text="Introduzca el nombre" [formGroup]="profileForm"/>
+  <app-control name="lastName" text="Introduzca el apellido" [formGroup]="profileForm"/>
 
-  </div>
   <div class="control">
     <button type="submit">Enviar datos</button>
   </div>
