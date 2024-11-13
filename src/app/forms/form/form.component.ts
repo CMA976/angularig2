@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, RequiredValidator, Validators } from '@angular/forms';
 import e from 'express';
 import { ControlComponent } from '../control/control.component';
+import { MyDirectiveDirective } from '../my-directive.directive';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [ReactiveFormsModule, ControlComponent],
+  imports: [ReactiveFormsModule, ControlComponent, MyDirectiveDirective],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })

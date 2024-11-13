@@ -1,4 +1,5 @@
 import { afterNextRender, Component, computed, effect, inject, Injector, signal } from '@angular/core';
+import { PipeTimePipe } from '../pipe-time.pipe';
 
 
 function getTime(date: Date) {
@@ -9,14 +10,14 @@ function getTime(date: Date) {
 @Component({
   selector: 'app-timer',
   standalone: true,
-  imports: [],
+  imports: [PipeTimePipe],
   templateUrl: './timer.component.html',
   styleUrl: './timer.component.css'
 })
 export class TimerComponent {
   private readonly injector = inject(Injector);
   date = signal(new Date())
-  timer = computed(() => getTime(this.date()))
+  //timer = computed(() => getTime(this.date()))
   constructor() {
     afterNextRender(() => {
       effect((onCleanUp) => {
