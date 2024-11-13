@@ -7,6 +7,8 @@ function getTime(date: Date) {
   return new Intl.DateTimeFormat('es-ES', options).format(date);
 }
 
+//https://angular.dev/guide/components/lifecycle#ngoninit
+
 @Component({
   selector: 'app-timer',
   standalone: true,
